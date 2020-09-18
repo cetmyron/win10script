@@ -35,7 +35,11 @@ $tweaks = @(
 	"Install7Zip",
 	"InstallNotepadplusplus",
 	"InstallMediaPlayerClassic",
-
+	"InstallTightVNC",
+ 	"InstallOpenOffice",
+ 	"InstallAvastAntiVirus",
+	"InstallGoogleChrome",
+	
 	### Windows Apps
 	"DebloatAll",
 
@@ -224,6 +228,26 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallTightVNC {
+	Write-Output "Installing Tight VNC"
+	choco install tightvnc -y
+}
+
+Function InstallOpenOffice {
+	Write-Output "Installing Open Office"
+	choco install openoffice -y
+}
+
+Function InstallAvastAntiVirus {
+	Write-Output "Installing Avast Antivirus"
+	choco install avastfreeantivirus -y
+}
+
+Function InstallGoogleChrome {
+	Write-Output "Installing Google Chrome"
+	choco install googlechrome -y
 }
 
 ##########
